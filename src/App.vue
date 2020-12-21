@@ -1,32 +1,54 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
-  </div>
+  <v-app>
+    <v-bottom-navigation :value="value" color="teal" grow width=100% height=36px>
+      <v-btn to='/'> 
+        <span>Inicio</span>
+
+        <v-icon>mdi-home</v-icon>
+      </v-btn>
+
+      <v-btn to='/about'>
+        <span>Conócenos</span>
+
+        <v-icon>mdi-help</v-icon>
+      </v-btn>
+
+      <v-btn to='/servicios'>
+        <span>Servicios</span>
+
+        <v-icon>mdi-cash</v-icon>
+      </v-btn>
+
+       <v-btn to='/Login'>
+        <span>Login</span>
+
+        <v-icon>mdi-login-variant</v-icon>
+      </v-btn>
+    </v-bottom-navigation>
+    <v-main>
+      <router-view />
+    </v-main>
+  </v-app>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+import HelloWorld from "./components/HelloWorld";
 
-#nav {
-  padding: 30px;
-}
+export default {
+  name: "App",
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
+  components: {
+    HelloWorld,
+  },
 
-#nav a.router-link-exact-active {
-  color: #42b983;
+  data: () => ({value: 1 
+    //
+  }),
+};
+</script>
+<style scoped>
+.menu {
+  width: 500px;
+  height: 100px;
 }
 </style>
