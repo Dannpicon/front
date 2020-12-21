@@ -27,18 +27,23 @@
     </v-bottom-navigation>
     <v-main>
       <router-view />
+
     </v-main>
+    <the-footer/>
   </v-app>
+  
 </template>
 
 <script>
 import HelloWorld from "./components/HelloWorld";
+import TheFooter from "./components/TheFooter"
 
 export default {
   name: "App",
 
   components: {
     HelloWorld,
+    TheFooter,
   },
 
   data: () => ({value: 1 

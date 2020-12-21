@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <h1>¿Quiénes somos?</h1>
+    <h1 class="titulo-principal">¿Quiénes somos?</h1>
     <div class="box">
       <img src="https://placeimg.com/400/400/tech" alt="">     
         <div class="descripcion"> Somos una empresa creada por gente como tú, emprendedores y con ganas de salir adelante. Ofrecemos soluciones a personas, grupos, empresas o instituciones, en temas de asesorías vía call-center.
@@ -11,11 +11,11 @@ Todas nuestras soluciones se basan en las recomendaciones dadas por los mejores 
     <div class="MyV">
       <div>
         <h2 class="titulo1">Misión</h2>
-        <p class="parrafo">Lograr que nuestros clientes, con precios accesibles a cualquier tipo de negocio, mejoren su atención al cliente vía call-center; integrando servicios tecnológicos y operativos, estos deben alinearse con los objetivos y necesidades del negocio.</p>
+        <p class="font-italic">Lograr que nuestros clientes, con precios accesibles a cualquier tipo de negocio, mejoren su atención al cliente vía call-center; integrando servicios tecnológicos y operativos, estos deben alinearse con los objetivos y necesidades del negocio.</p>
       </div>
       <div>
         <h2 class="titulo1">Visión</h2>
-        <p class="parrafo">Para el año 2022 consolidarnos como una empresa de servicios de call-center reconocida a nivel nacional, cuyas principales características a destacar sean la calidad del servicio, la correcta integración entre mejoras tecnológicas y operativas y la accesibilidad en sus precios.</p>
+        <p class="font-italic">Para el año 2022 consolidarnos como una empresa de servicios de call-center reconocida a nivel nacional, cuyas principales características a destacar sean la calidad del servicio, la correcta integración entre mejoras tecnológicas y operativas y la accesibilidad en sus precios.</p>
       </div>
     </div>
   </div>
@@ -32,6 +32,9 @@ export default {
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 10px;
+}
+.titulo-principal{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .descripcion{
   width: 30%;
